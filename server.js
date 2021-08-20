@@ -1,13 +1,11 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-// const PORT =
 const myName = 'James Iweobi';
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(morgan('dev'));
 
 app.post('/contact-me', (req, res) => {
   const { name, email, message } = req.body;
