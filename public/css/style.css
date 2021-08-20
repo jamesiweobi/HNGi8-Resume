@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.bio-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  background: url(../image/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: contain;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-hero {
+  margin: auto;
+}
+
+.bio-hero h1 {
+  font-size: 4.5rem;
+  color: #b69f5e;
+  letter-spacing: 3px;
+}
+
+.bio-hero h2 {
+  margin: 1rem 0;
+  color: #b88746;
+  font-size: 2rem;
+}
+.bio-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  color: rgb(217, 220, 223);
+  margin-bottom: 100px;
+}
+
+.btn {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 200px;
+  display: block;
+  color: #b88746;
+  background: transparent;
+  border: 1px solid rgb(217, 220, 223);
+  transition: 0.2s ease-in-out 0s;
+}
+
+.bio-hero .btn {
+  margin: 0 auto;
+  transition: 0.2s ease-in-out 0s;
+}
+
+.bio-hero .btn:hover {
+  transform: scale(1.25);
+  color: #b69f5e;
+}
