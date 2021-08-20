@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const morgan = require('morgan');
-const PORT = process.env.PORT || 3000;
+// const PORT =
 const myName = 'James Iweobi';
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -19,4 +19,6 @@ app.post('/contact-me', (req, res) => {
   });
 });
 
-app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
+app.listen(process.env.PORT || 3000, () =>
+  console.log(`Server listening on port: ${PORT}`)
+);
